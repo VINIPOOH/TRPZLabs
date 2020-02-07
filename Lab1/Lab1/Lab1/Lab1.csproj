@@ -69,6 +69,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\ComputerBuilder.cs" />
+    <Compile Include="model\CPU.cs" />
+    <Compile Include="model\CPUTypes.cs" />
+    <Compile Include="model\ElectronicСomponent.cs" />
+    <Compile Include="model\Motherboard.cs" />
+    <Compile Include="model\MotherboardType.cs" />
+    <Compile Include="model\PowerSupply.cs" />
+    <Compile Include="model\RAM.cs" />
+    <Compile Include="model\RAMTypes.cs" />
+    <Compile Include="model\SystemUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

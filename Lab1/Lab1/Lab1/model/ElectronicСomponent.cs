@@ -8,6 +8,11 @@ namespace Lab1Code.model
 {
     class ElectronicСomponent
     {
-        
+        private int usingPover;
+
+        public ElectronicСomponent(int usingPover)
+        {
+            this.usingPover = usingPover;
+        }
     }
 }

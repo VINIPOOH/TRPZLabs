@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class SystemUnit
+    class SystemUnit : ElectronicСomponent
     {
+        private MotherboardTypes motherboardTypes;
+        private
     }
 }
