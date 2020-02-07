@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1.model
 {
-    class RAMTypes
+    enum RAMTypes
     {
+        BIG,
+        SMOLLE
     }
 }

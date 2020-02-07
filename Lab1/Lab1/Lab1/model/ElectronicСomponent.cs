@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class ElectronicСomponent
+    public class ElectronicСomponent
     {
         private int usingPover;
 
@@ -14,5 +14,7 @@ namespace Lab1Code.model
         {
             this.usingPover = usingPover;
         }
+
+        public int UsingPover { get => usingPover; set => usingPover = value; }
     }
 }

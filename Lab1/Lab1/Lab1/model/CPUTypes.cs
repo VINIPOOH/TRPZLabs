@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1.model
 {
-    class CPUTypes
+    public enum CPUTypes
     {
+        BIG,
+        SMOLLE
     }
 }

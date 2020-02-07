@@ -1,6 +1,8 @@
 ﻿namespace Lab1Code.model
 {
-    internal class MotherboardTypes
+    enum MotherboardTypes
     {
+        BIG,
+        SMOLLE
     }
 }

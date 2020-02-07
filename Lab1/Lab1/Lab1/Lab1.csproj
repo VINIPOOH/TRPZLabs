@@ -74,7 +74,7 @@
     <Compile Include="model\CPUTypes.cs" />
     <Compile Include="model\ElectronicСomponent.cs" />
     <Compile Include="model\Motherboard.cs" />
-    <Compile Include="model\MotherboardType.cs" />
+    <Compile Include="model\MotherboardTypes.cs" />
     <Compile Include="model\PowerSupply.cs" />
     <Compile Include="model\RAM.cs" />
     <Compile Include="model\RAMTypes.cs" />

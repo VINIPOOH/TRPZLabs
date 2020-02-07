@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class CPU : ElectronicСomponent
+    public class CPU : ElectronicСomponent
     {
         private CPUTypes cpuTypes;
 
-        public CPUTypes(CPUTypes cpuTypes)
+        public CPU(CPUTypes cpuTypes, int usingPover) : base(usingPover)
         {
             this.cpuTypes = cpuTypes;
         }
+
+        public CPUTypes CpuTypes { get => cpuTypes; set => cpuTypes = value; }
     }
 }
