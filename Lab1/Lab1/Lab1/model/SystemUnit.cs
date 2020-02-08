@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class SystemUnit : ElectronicСomponent
+    class SystemUnit
     {
         private MotherboardTypes motherboardTypes;
         private int maxPoverSupplyVolume;
@@ -14,16 +14,22 @@ namespace Lab1Code.model
         private PowerSupply powerSupply;
         private String name;
 
-        internal MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
+        public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
         public int MaxPoverSupplyVolume { get => maxPoverSupplyVolume; set => maxPoverSupplyVolume = value; }
         internal Motherboard Motherboard { get => motherboard; set => motherboard = value; }
         internal PowerSupply PowerSupply { get => powerSupply; set => powerSupply = value; }
+        public string Name { get => name; set => name = value; }
 
-        public SystemUnit(MotherboardTypes motherboardTypes, int maxPoverSupplyVolume, string name, int usingPover) : base(usingPover)
+        public override string ToString()
         {
-            this.motherboardTypes = motherboardTypes;
-            this.maxPoverSupplyVolume = maxPoverSupplyVolume;
-            this.name = name;
+            return base.ToString()+motherboardTypes+maxPoverSupplyVolume+motherboard+powerSupply+name;
+        }
+
+        public SystemUnit(MotherboardTypes motherboardTypes, int maxPoverSupplyVolume, string name)
+        {
+            MotherboardTypes = motherboardTypes;
+            MaxPoverSupplyVolume = maxPoverSupplyVolume;
+            Name = name;
         }
 
         public bool isComponCorrect()

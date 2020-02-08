@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab1Code.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,42 @@ namespace Lab1
     /// </summary>
     public partial class MainWindow : Window
     {
+        ComputerBuilder computerBuilder = new ComputerBuilder();
         public MainWindow()
         {
             InitializeComponent();
+
+            MotherboardGreedView.ItemsSource = computerBuilder.Motherboards;
+            SystemUnitsGreedView.ItemsSource = computerBuilder.SystemUnits;
+           
+
+
+            CPUGreedView.ItemsSource = computerBuilder.CPUs;
+            RamGreedView.ItemsSource = computerBuilder.RAMs;
+            PowerSupplyGreedView.ItemsSource = computerBuilder.PowerSupplies;
+
+            ResultChoosesTextBox.Text = computerBuilder.ComponResult.ToString();
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            
+        }
+
+        private void ChooseIDSistemUnitButton_Click(object sender, RoutedEventArgs e)
+        {
+            computerBuilder.setChooseSystemUnit(SystemUnitsGreedView.SelectedIndex);
+        }
+
+        private void ReloadCompone_Click(object sender, RoutedEventArgs e)
+        {
+            ResultChoosesTextBox.Text = computerBuilder.ComponResult.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

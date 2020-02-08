@@ -15,18 +15,24 @@ namespace Lab1Code.model
         private CPU cpu;
         private RAM ram;
 
-        public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, CPU cpu, RAM ram, int usingPover) : base(usingPover)
+        public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
+        public RAMTypes RAMType { get => rAMType; set => rAMType = value; }
+        public CPUTypes CPUTypes { get => cPUTypes; set => cPUTypes = value; }
+        internal CPU Cpu { get => cpu; set => cpu = value; }
+        internal RAM Ram { get => ram; set => ram = value; }
+
+        public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, int usingPover) : base(usingPover)
         {
             this.motherboardTypes = motherboardTypes;
             this.rAMType = rAMType;
             this.cPUTypes = cPUTypes;
-            this.cpu = cpu;
-            this.ram = ram;
+            
         }
 
-        internal CPU Cpu { get => cpu; set => cpu = value; }
-        internal RAM Ram { get => ram; set => ram = value; }
-        internal MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
+        public override string ToString()
+        {
+            return cpu.ToString()+ram.ToString()+motherboardTypes+cPUTypes+rAMType;
+        }
 
         public bool isComponCorrect()
         {

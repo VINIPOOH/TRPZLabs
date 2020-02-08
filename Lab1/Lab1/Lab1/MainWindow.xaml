@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="CecerPCComponing" Height="798.5" Width="1300">
+    <Grid Height="768" Loaded="Grid_Loaded">
+        <DataGrid x:Name="SystemUnitsGreedView" HorizontalAlignment="Left" Height="108" Margin="41,28,0,0" VerticalAlignment="Top" Width="273"/>
+        <DataGrid x:Name="CPUGreedView" HorizontalAlignment="Left" Height="124" Margin="41,272,0,0" VerticalAlignment="Top" Width="273"/>
+        <DataGrid x:Name="RamGreedView" HorizontalAlignment="Left" Height="140" Margin="41,405,0,0" VerticalAlignment="Top" Width="273"/>
+        <DataGrid x:Name="PowerSupplyGreedView" HorizontalAlignment="Left" Height="127" Margin="41,550,0,0" VerticalAlignment="Top" Width="273"/>
+        <Button x:Name="ChooseIDSistemUnitButton" Content="Choose System Unit" HorizontalAlignment="Left" Margin="344,28,0,0" VerticalAlignment="Top" Width="75" Click="ChooseIDSistemUnitButton_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="344,141,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="344,272,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="344,405,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="344,550,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="CheckButton" Content="Check" HorizontalAlignment="Left" Margin="770,201,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="ResultChoosesTextBox" HorizontalAlignment="Left" Height="74" Margin="601,48,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="reloadCompone" Content="Reload Compon Info" HorizontalAlignment="Left" Margin="601,201,0,0" VerticalAlignment="Top" Width="75" Click="ReloadCompone_Click"/>
+        <DataGrid x:Name="MotherboardGreedView" HorizontalAlignment="Left" Height="126" Margin="41,141,0,0" VerticalAlignment="Top" Width="273"/>
+
     </Grid>
 </Window>
