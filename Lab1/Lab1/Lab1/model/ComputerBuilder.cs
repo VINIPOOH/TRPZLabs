@@ -73,7 +73,7 @@ namespace Lab1Code.model
             {
                 return false;
             }
-            componResult.Motherboard.Cpu = cPUs[id];
+            componResult.Motherboard.Ram = rAMs[id];
             return true;
 
         }

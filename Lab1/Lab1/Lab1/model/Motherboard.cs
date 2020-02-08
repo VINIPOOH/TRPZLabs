@@ -55,10 +55,12 @@ namespace Lab1Code.model
         {
             if (cpu==null||ram==null)
             {
+                
                 return false;
             }
             if (cpu.CpuTypes.Equals(cPUTypes)&&ram.RAMTypes.Equals(rAMType))
             {
+                
                 return true;
             }else{
                 return false;

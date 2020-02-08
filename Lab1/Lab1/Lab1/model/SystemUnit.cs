@@ -53,15 +53,18 @@ namespace Lab1Code.model
         {
             if (motherboard == null||powerSupply==null)
             {
+                
                 return false;
             }
             if (motherboard.isComponCorrect() && motherboard.MotherboardTypes.Equals(motherboardTypes)
                 && powerSupply.Volume<maxPoverSupplyVolume && isEnoughPower())
             {
+                
                 return true;
             }
             else
             {
+                
                 return false;
             }    
         }
