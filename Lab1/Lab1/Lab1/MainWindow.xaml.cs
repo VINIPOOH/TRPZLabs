@@ -56,7 +56,27 @@ namespace Lab1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            computerBuilder.setChooseMotherboard(MotherboardGreedView.SelectedIndex); 
+        }
 
+        private void ChooseCPU_Click(object sender, RoutedEventArgs e)
+        {
+            computerBuilder.setChooseCPU(CPUGreedView.SelectedIndex);
+        }
+
+        private void ChooseRam_Click(object sender, RoutedEventArgs e)
+        {
+            computerBuilder.setChooseRAM(RamGreedView.SelectedIndex);
+        }
+
+        private void ChoosePowerSuplie_Click(object sender, RoutedEventArgs e)
+        {
+            computerBuilder.setChoosePowerSupply(PowerSupplyGreedView.SelectedIndex);
+        }
+
+        private void CheckButton_Click(object sender, RoutedEventArgs e)
+        {
+            ResaltOfCheck.Text= computerBuilder.checkIsCanBeComponeSuchComputer().ToString();
         }
     }
 }

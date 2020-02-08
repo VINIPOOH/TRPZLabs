@@ -28,7 +28,7 @@ namespace Lab1Code.model
         {
             //заполнить списки
             systemUnits = new BindingList<SystemUnit>();//спросить про ИДЕЕ!!!
-            systemUnits.Add(new SystemUnit(MotherboardTypes.BIG,500,"BIG"));
+            systemUnits.Add(new SystemUnit(MotherboardTypes.BIG,1000,"BIG"));
             systemUnits.Add(new SystemUnit(MotherboardTypes.BIG, 100, "BIG100"));
             systemUnits.Add(new SystemUnit(MotherboardTypes.BIG, 500, "BIG"));
 
@@ -47,6 +47,7 @@ namespace Lab1Code.model
 
             powerSupplies = new BindingList<PowerSupply>();
             powerSupplies.Add(new PowerSupply(300, -2));
+            powerSupplies.Add(new PowerSupply(300, 2));
 
             componResult = new SystemUnit(MotherboardTypes.BIG, 500, "DEFAULT");
         }
@@ -68,13 +69,21 @@ namespace Lab1Code.model
         
         public bool setChooseRAM(int id)
         {
-            componResult.Motherboard.Ram = rAMs[id];
+            if (componResult.Motherboard == null)
+            {
+                return false;
+            }
+            componResult.Motherboard.Cpu = cPUs[id];
             return true;
 
         }
         
         public bool setChooseCPU(int id)
         {
+            if (componResult.Motherboard==null)
+            {
+                return false;
+            }
             componResult.Motherboard.Cpu = cPUs[id];
             return true;
         }

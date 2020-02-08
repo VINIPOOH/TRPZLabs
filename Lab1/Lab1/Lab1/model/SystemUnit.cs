@@ -22,7 +22,24 @@ namespace Lab1Code.model
 
         public override string ToString()
         {
-            return base.ToString()+motherboardTypes+maxPoverSupplyVolume+motherboard+powerSupply+name;
+            String toRetutn="название корпуса"+name+" "+ "maxPoverSupplyVolume"+ maxPoverSupplyVolume+ "motherboardTypes"+ motherboardTypes;
+            if (motherboard == null)
+            {
+                toRetutn += "motherboard" + "null";
+            }
+            else
+            {
+                toRetutn += "motherboard" + motherboard.ToString();
+            }
+            if (powerSupply == null)
+            {
+                toRetutn += "powerSupply" + "null";
+            }
+            else
+            {
+                toRetutn += "powerSupply" + powerSupply.ToString();
+            }
+            return toRetutn;
         }
 
         public SystemUnit(MotherboardTypes motherboardTypes, int maxPoverSupplyVolume, string name)
@@ -34,6 +51,10 @@ namespace Lab1Code.model
 
         public bool isComponCorrect()
         {
+            if (motherboard == null||powerSupply==null)
+            {
+                return false;
+            }
             if (motherboard.isComponCorrect() && motherboard.MotherboardTypes.Equals(motherboardTypes)
                 && powerSupply.Volume<maxPoverSupplyVolume && isEnoughPower())
             {

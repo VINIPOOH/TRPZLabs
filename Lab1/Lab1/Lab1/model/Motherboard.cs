@@ -12,8 +12,8 @@ namespace Lab1Code.model
         private MotherboardTypes motherboardTypes;
         private RAMTypes rAMType;
         private CPUTypes cPUTypes;
-        private CPU cpu;
-        private RAM ram;
+        private CPU cpu=null;
+        private RAM ram=null;
 
         public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
         public RAMTypes RAMType { get => rAMType; set => rAMType = value; }
@@ -31,11 +31,32 @@ namespace Lab1Code.model
 
         public override string ToString()
         {
-            return cpu.ToString()+ram.ToString()+motherboardTypes+cPUTypes+rAMType;
+            String toReturn = "";
+            if (cpu == null)
+            {
+                toReturn += "cpu" + "null";
+            }
+            else
+            {
+                toReturn += "cpu" + cpu.ToString();
+            }
+            if (ram == null)
+            {
+                toReturn += "ram" + "null";
+            }
+            else
+            {
+                toReturn += "ram" + ram.ToString();
+            }
+            return toReturn;
         }
 
         public bool isComponCorrect()
         {
+            if (cpu==null||ram==null)
+            {
+                return false;
+            }
             if (cpu.CpuTypes.Equals(cPUTypes)&&ram.RAMTypes.Equals(rAMType))
             {
                 return true;
