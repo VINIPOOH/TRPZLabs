@@ -1,7 +1,6 @@
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\bin\Debug\Lab1.exe.config
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\bin\Debug\Lab1.exe
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\bin\Debug\Lab1.pdb
-B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\MainWindow.g.cs
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\App.g.cs
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1_MarkupCompile.cache
@@ -10,6 +9,6 @@ B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\MainWindow.baml
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.g.resources
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
-B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.exe
 B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.pdb
+B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache

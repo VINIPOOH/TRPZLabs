@@ -1,4 +1,4 @@
-﻿namespace Lab1Code.model
+﻿namespace Lab1.dao
 {
     enum MotherboardTypes
     {

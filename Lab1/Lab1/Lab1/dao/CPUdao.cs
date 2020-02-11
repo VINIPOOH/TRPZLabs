@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.model
+namespace Lab1.dao
 {
-    enum RAMTypes
+    class CPUdao
     {
-        BIG,
-        SMOLLE
+        private CPUTypes cpuTypes;
+        private int usingPover;
+        
     }
 }
