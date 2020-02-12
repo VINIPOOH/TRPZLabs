@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab1.dao
 {
-    class CPUdao
+    class CPUDao
     {
         private CPUTypes cpuTypes;
         private int usingPover;
-        
+
+        public CPUDao(CPUTypes cpuTypes, int usingPover)
+        {
+            this.cpuTypes = cpuTypes;
+            this.usingPover = usingPover;
+        }
     }
 }

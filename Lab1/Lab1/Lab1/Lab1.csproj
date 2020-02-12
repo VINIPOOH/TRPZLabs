@@ -63,8 +63,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="dao\CPUdao.cs" />
+    <Compile Include="dao\CPUDao.cs" />
+    <Compile Include="dao\CPURepository.cs" />
+    <Compile Include="dao\MotherboardDao.cs" />
+    <Compile Include="dao\PowerSupplyDao.cs" />
+    <Compile Include="dao\RAMDao.cs" />
+    <Compile Include="dao\SystemUnitDao.cs" />
+    <Compile Include="db\CPURepository.cs" />
     <Compile Include="db\dbHandler.cs" />
+    <Compile Include="db\MotherboardRepository.cs" />
+    <Compile Include="db\PowerSupplyRepository.cs" />
+    <Compile Include="db\RAMRepository.cs" />
+    <Compile Include="db\SysteUnitRepository.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
