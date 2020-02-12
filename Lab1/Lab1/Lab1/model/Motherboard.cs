@@ -17,6 +17,15 @@ namespace Lab1Code.model
         internal CPU Cpu { get => cpu; set => cpu = value; }
         internal RAM Ram { get => ram; set => ram = value; }
 
+        public Motherboard(MotherboardDao motherboardDao): base(motherboardDao.UsingPover)
+        {
+            this.motherboardTypes = motherboardDao.MotherboardTypes;
+            this.rAMType = motherboardDao.RAMType;
+            this.cPUTypes = motherboardDao.CPUTypes;
+            this.cpu = new CPU(motherboardDao.Cpu);
+            this.ram = new RAM(motherboardDao.Ram);
+        }
+
         public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, int usingPover) : base(usingPover)
         {
             this.motherboardTypes = motherboardTypes;

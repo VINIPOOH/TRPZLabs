@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1.dao
 {
-    class RAMDao
+    public class RAMDao
     {
         private int usingPover;
         private RAMTypes rAMTypes;
@@ -16,5 +16,8 @@ namespace Lab1.dao
             this.usingPover = usingPover;
             this.rAMTypes = rAMTypes;
         }
+
+        public int UsingPover { get => usingPover; set => usingPover = value; }
+        internal RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
     }
 }

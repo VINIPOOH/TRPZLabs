@@ -17,6 +17,11 @@ namespace Lab1Code.model
             this.cpuTypes = cpuTypes;
         }
 
+        public CPU(CPUDao cPUDao) : base(cPUDao.UsingPover)
+        {
+            this.cpuTypes = cPUDao.CpuTypes;
+        }
+
         public CPUTypes CpuTypes { get => cpuTypes; set => cpuTypes = value; }
     }
 }

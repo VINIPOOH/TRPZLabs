@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1.dao
 {
-    class MotherboardDao
+    public class MotherboardDao
     {
         private int usingPover;
         private MotherboardTypes motherboardTypes;
@@ -24,5 +24,14 @@ namespace Lab1.dao
             this.cpu = cpu;
             this.ram = ram;
         }
+
+        public int UsingPover { get => usingPover; set => usingPover = value; }
+        public CPUTypes CPUTypes { get => cPUTypes; set => cPUTypes = value; }
+        
+        internal MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
+        internal RAMTypes RAMType { get => rAMType; set => rAMType = value; }
+        internal CPUDao Cpu { get => cpu; set => cpu = value; }
+        internal RAMDao Ram { get => ram; set => ram = value; }
+        
     }
 }

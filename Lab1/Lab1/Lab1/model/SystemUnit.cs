@@ -15,6 +15,29 @@ namespace Lab1Code.model
         private PowerSupply powerSupply;
         private String name;
 
+        public SystemUnit(SystemUnitDao systemUnitDao)
+        {
+            this.motherboardTypes = systemUnitDao.MotherboardTypes;
+            this.maxPoverSupplyVolume = systemUnitDao.MaxPoverSupplyVolume;
+            if (systemUnitDao.Motherboard == null)
+            {
+                this.motherboard = null;
+            }
+            else
+            {
+                this.motherboard = new Motherboard(systemUnitDao.Motherboard);
+            }
+            if (systemUnitDao.PowerSupply == null)
+            {
+                this.powerSupply = null;
+            }
+            else
+            {
+                this.powerSupply = new PowerSupply(systemUnitDao.PowerSupply);
+            }
+            this.name = systemUnitDao.Name;
+        }
+
         public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
         public int MaxPoverSupplyVolume { get => maxPoverSupplyVolume; set => maxPoverSupplyVolume = value; }
         internal Motherboard Motherboard { get => motherboard; set => motherboard = value; }

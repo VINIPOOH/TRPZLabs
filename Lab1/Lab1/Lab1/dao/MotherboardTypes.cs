@@ -1,6 +1,6 @@
 ﻿namespace Lab1.dao
 {
-    enum MotherboardTypes
+    public enum MotherboardTypes
     {
         BIG,
         SMOLLE

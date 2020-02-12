@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1.dao
 {
-    enum RAMTypes
+    public enum RAMTypes
     {
         BIG,
         SMOLLE

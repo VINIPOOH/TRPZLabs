@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1.dao
 {
-    class PowerSupplyDao
+    public class PowerSupplyDao
     {
         private int usingPover;
         private int volume;
@@ -16,5 +16,8 @@ namespace Lab1.dao
             this.usingPover = usingPover;
             this.volume = volume;
         }
+
+        public int UsingPover { get => usingPover; set => usingPover = value; }
+        public int Volume { get => volume; set => volume = value; }
     }
 }

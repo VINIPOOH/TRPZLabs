@@ -6,11 +6,18 @@ namespace Lab1Code.model
     {
         private RAMTypes rAMTypes;
 
+        public RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
+
+        public RAM(RAMDao rAMDao) : base(rAMDao.UsingPover)
+        {
+            this.rAMTypes = rAMDao.RAMTypes;
+        }
+
         public RAM(RAMTypes rAMTypes, int usingPover) : base(usingPover)
         {
             this.rAMTypes = rAMTypes;
         }
 
-         public RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
+        
     }
 }

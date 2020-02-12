@@ -9,9 +9,6 @@ namespace Lab1.db
 {
     class PowerSupplyRepository
     {
-        public List<PowerSupplyDao> findAll()
-        {
-            
-        }
+        
     }
 }
