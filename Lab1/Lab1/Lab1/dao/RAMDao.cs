@@ -11,7 +11,7 @@ namespace Lab1.dao
         private int usingPover;
         private RAMTypes rAMTypes;
 
-        public RAMDao(int usingPover, RAMTypes rAMTypes)
+        public RAMDao( RAMTypes rAMTypes, int usingPover)
         {
             this.usingPover = usingPover;
             this.rAMTypes = rAMTypes;

@@ -22,8 +22,23 @@ namespace Lab1Code.model
             this.motherboardTypes = motherboardDao.MotherboardTypes;
             this.rAMType = motherboardDao.RAMType;
             this.cPUTypes = motherboardDao.CPUTypes;
-            this.cpu = new CPU(motherboardDao.Cpu);
-            this.ram = new RAM(motherboardDao.Ram);
+            if (motherboardDao.Cpu == null)
+            {
+                this.cpu = null;
+            }
+            else
+            {
+                this.cpu = new CPU(motherboardDao.Cpu);
+            }
+            if (motherboardDao.Ram==null)
+            {
+                this.ram = null;
+            }
+            else
+            {
+                this.ram = new RAM(motherboardDao.Ram);
+            }
+            
         }
 
         public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, int usingPover) : base(usingPover)

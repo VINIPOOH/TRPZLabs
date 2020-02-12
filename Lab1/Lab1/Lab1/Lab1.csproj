@@ -85,6 +85,7 @@
     <Compile Include="dao\CPUTypes.cs" />
     <Compile Include="model\ElectronicСomponent.cs" />
     <Compile Include="model\EntytyConverter.cs" />
+    <Compile Include="model\IConvertebelFromDao.cs" />
     <Compile Include="model\Motherboard.cs" />
     <Compile Include="dao\MotherboardTypes.cs" />
     <Compile Include="model\PowerSupply.cs" />

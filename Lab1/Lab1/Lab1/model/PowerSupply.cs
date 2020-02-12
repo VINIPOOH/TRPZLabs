@@ -1,4 +1,5 @@
 ﻿using Lab1.dao;
+using Lab1.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class PowerSupply : ElectronicСomponent
+    class PowerSupply : ElectronicСomponent, IConvertebelFromDao <PowerSupply, PowerSupplyDao>
     {
         private int volume;
 
@@ -22,5 +23,10 @@ namespace Lab1Code.model
         }
 
         public int Volume { get => volume; set => volume = value; }
+
+        public PowerSupply DaoObjectToModelObject(PowerSupplyDao typeFrom)
+        {
+            return new PowerSupply(typeFrom);
+        }
     }
 }

@@ -27,26 +27,16 @@ namespace Lab1Code.model
             //заполнить списки
 
             systemUnits = EntytyConverter.SystemUnitDaoToSystemUnit(SysteUnitRepository.findAll());
-            systemUnits.Add(new SystemUnit(MotherboardTypes.BIG,1000,"BIG"));
-            systemUnits.Add(new SystemUnit(MotherboardTypes.BIG, 100, "BIG100"));
-            systemUnits.Add(new SystemUnit(MotherboardTypes.BIG, 500, "BIG"));
+            
 
-            motherboards = new List<Motherboard>();
-            motherboards.Add(new Motherboard(MotherboardTypes.BIG,RAMTypes.BIG,CPUTypes.BIG,30));
-            motherboards.Add(new Motherboard(MotherboardTypes.BIG, RAMTypes.BIG, CPUTypes.BIG, 130));
-            motherboards.Add(new Motherboard(MotherboardTypes.BIG, RAMTypes.SMOLLE, CPUTypes.BIG, 30));
+            motherboards = EntytyConverter.MotherboardDaoToMotherboard(MotherboardRepository.findAll());
 
-            cPUs = new List<CPU>();
-            cPUs.Add(new CPU(CPUTypes.SMOLLE, 200));
-            cPUs.Add(new CPU(CPUTypes.BIG, 300));
 
-            rAMs = new List<RAM>();
-            rAMs.Add(new RAM(RAMTypes.SMOLLE,100));
-            rAMs.Add(new RAM(RAMTypes.BIG, 100));
+            cPUs = EntytyConverter.CPUDaoToCPU(CPURepository.findAll());
 
-            powerSupplies = new List<PowerSupply>();
-            powerSupplies.Add(new PowerSupply(300, -2));
-            powerSupplies.Add(new PowerSupply(300, 2));
+            rAMs = EntytyConverter.RAMUnitDaoToRAM(RAMRepository.findAll());
+
+            powerSupplies = EntytyConverter.PowerSupplyDaoToPowerSupply(PowerSupplyRepository.findAll());
 
             componResult = new SystemUnit(MotherboardTypes.BIG, 500, "DEFAULT");
         }
