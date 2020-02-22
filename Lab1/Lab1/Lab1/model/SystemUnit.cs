@@ -1,92 +1,68 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab1.dto;
 
 namespace Lab1Code.model
 {
     class SystemUnit
     {
-        private MotherboardTypes motherboardTypes;
-        private int maxPoverSupplyVolume;
-        private Motherboard motherboard;
-        private PowerSupply powerSupply;
-        private String name;
+        private SystemUnitDto systemUnitDtoAdaptee;
 
-        public SystemUnit(SystemUnitDao systemUnitDao)
+        public SystemUnit(SystemUnitDto systemUnitDto)
         {
-            this.motherboardTypes = systemUnitDao.MotherboardTypes;
-            this.maxPoverSupplyVolume = systemUnitDao.MaxPoverSupplyVolume;
-            if (systemUnitDao.Motherboard == null)
-            {
-                this.motherboard = null;
-            }
-            else
-            {
-                this.motherboard = new Motherboard(systemUnitDao.Motherboard);
-            }
-            if (systemUnitDao.PowerSupply == null)
-            {
-                this.powerSupply = null;
-            }
-            else
-            {
-                this.powerSupply = new PowerSupply(systemUnitDao.PowerSupply);
-            }
-            this.name = systemUnitDao.Name;
+            systemUnitDtoAdaptee = systemUnitDto;
         }
 
-        public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
-        public int MaxPoverSupplyVolume { get => maxPoverSupplyVolume; set => maxPoverSupplyVolume = value; }
-        internal Motherboard Motherboard { get => motherboard; set => motherboard = value; }
-        internal PowerSupply PowerSupply { get => powerSupply; set => powerSupply = value; }
-        public string Name { get => name; set => name = value; }
+        public MotherboardTypes MotherboardTypes { get => systemUnitDtoAdaptee.MotherboardTypes;
+            set => systemUnitDtoAdaptee.MotherboardTypes = value; }
+        public int MaxPoverSupplyVolume { get => systemUnitDtoAdaptee.MaxPoverSupplyVolume;
+            set => systemUnitDtoAdaptee.MaxPoverSupplyVolume = value; }
+        internal Motherboard Motherboard { 
+            get => new Motherboard(systemUnitDtoAdaptee.MotherboardDto);
+            set => systemUnitDtoAdaptee.MotherboardDto = value.MotherboardDtoAdaptee; }
+        internal PowerSupply PowerSupply {
+            get => new PowerSupply(systemUnitDtoAdaptee.PowerSupplyDto);
+            set => systemUnitDtoAdaptee.PowerSupplyDto = value.PowerSupplyDtoAdaptee; }
+        public string Name { get => systemUnitDtoAdaptee.Name;
+            set => systemUnitDtoAdaptee.Name = value; }
 
         public override string ToString()
         {
-            String toRetutn="название корпуса"+name+" "+ "maxPoverSupplyVolume"+ maxPoverSupplyVolume+ "motherboardTypes"+ motherboardTypes;
-            if (motherboard == null)
-            {
-                toRetutn += "motherboard" + "null";
-            }
-            else
-            {
-                toRetutn += "motherboard" + motherboard.ToString();
-            }
-            if (powerSupply == null)
-            {
-                toRetutn += "powerSupply" + "null";
-            }
-            else
-            {
-                toRetutn += "powerSupply" + powerSupply.ToString();
-            }
+            String toRetutn="название корпуса"+systemUnitDtoAdaptee.Name +
+                            " "+ "maxPoverSupplyVolume"+ systemUnitDtoAdaptee.MaxPoverSupplyVolume
+            + "motherboardTypes"+ systemUnitDtoAdaptee.MotherboardTypes;
+            
             return toRetutn;
         }
 
         public SystemUnit(MotherboardTypes motherboardTypes, int maxPoverSupplyVolume, string name)
         {
-            MotherboardTypes = motherboardTypes;
-            MaxPoverSupplyVolume = maxPoverSupplyVolume;
-            Name = name;
+            systemUnitDtoAdaptee = new SystemUnitDto(motherboardTypes, maxPoverSupplyVolume,null
+                ,null,name);
         }
 
         public bool isComponCorrect()
         {
-            if (motherboard == null||powerSupply==null)
+            if (systemUnitDtoAdaptee.MotherboardDto == null
+                ||systemUnitDtoAdaptee.PowerSupplyDto==null)
             {
                 
                 return false;
             }
-            if (motherboard.isComponCorrect() && motherboard.MotherboardTypes.Equals(motherboardTypes)
-                && powerSupply.Volume<maxPoverSupplyVolume && isEnoughPower())
+
+            Motherboard motherboardForChecing = new Motherboard(systemUnitDtoAdaptee.MotherboardDto);
+            PowerSupply powerSupplyForChecing = new PowerSupply(systemUnitDtoAdaptee.PowerSupplyDto);
+            if (motherboardForChecing.isComponCorrect() 
+                && motherboardForChecing.MotherboardTypes.Equals(systemUnitDtoAdaptee.MotherboardTypes)
+                && powerSupplyForChecing.Volume<systemUnitDtoAdaptee.MaxPoverSupplyVolume 
+                && isEnoughPower())
             {
-                
                 return true;
-            }
-            else
+            }else
             {
                 
                 return false;
@@ -95,12 +71,14 @@ namespace Lab1Code.model
 
         private bool isEnoughPower()
         {
-            if (powerSupply.UsingPover + motherboard.countPowerOfMatherbordAndComponents() >= 0)
+            Motherboard motherboardForChecing = new Motherboard(systemUnitDtoAdaptee.MotherboardDto);
+            PowerSupply powerSupplyForChecing = new PowerSupply(systemUnitDtoAdaptee.PowerSupplyDto);
+
+            if (powerSupplyForChecing.UsingPover + 
+                motherboardForChecing.countPowerOfMatherbordAndComponents() >= 0)
             {
                 return true;
-            }
-            else
-            {
+            }else{
                 return false;
             }
 

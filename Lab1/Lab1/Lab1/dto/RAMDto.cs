@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.dao
+namespace Lab1.dto
 {
-    public class RAMDao
+    public class RAMDto
     {
         private int usingPover;
         private RAMTypes rAMTypes;
 
-        public RAMDao( RAMTypes rAMTypes, int usingPover)
+        public RAMDto( RAMTypes rAMTypes, int usingPover)
         {
             this.usingPover = usingPover;
             this.rAMTypes = rAMTypes;

@@ -1,4 +1,4 @@
-﻿namespace Lab1.dao
+﻿namespace Lab1.dto
 {
     public enum MotherboardTypes
     {

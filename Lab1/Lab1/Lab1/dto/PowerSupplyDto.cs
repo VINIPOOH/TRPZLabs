@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.dao
+namespace Lab1.dto
 {
-    public class PowerSupplyDao
+    public class PowerSupplyDto
     {
         private int usingPover;
         private int volume;
 
-        public PowerSupplyDao(int usingPover, int volume)
+        public PowerSupplyDto(int usingPover, int volume)
         {
             this.usingPover = usingPover;
             this.volume = volume;

@@ -1,4 +1,4 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using Lab1Code.model;
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ namespace Lab1.db
 {
     class RAMRepository
     {
-        public static List<RAMDao> findAll()
+        public static List<RAMDto> findAll()
         {
-            List<RAMDao> rAMs = new List<RAMDao>();
-            rAMs.Add(new RAMDao (RAMTypes.SMOLLE, 100));
-            rAMs.Add(new RAMDao(RAMTypes.BIG, 100));
+            List<RAMDto> rAMs = new List<RAMDto>();
+            rAMs.Add(new RAMDto (RAMTypes.SMOLLE, 100));
+            rAMs.Add(new RAMDto(RAMTypes.BIG, 100));
             return rAMs;
         }
     }

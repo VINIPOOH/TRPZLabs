@@ -63,17 +63,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="dao\CPUDao.cs" />
-    <Compile Include="dao\MotherboardDao.cs" />
-    <Compile Include="dao\PowerSupplyDao.cs" />
-    <Compile Include="dao\RAMDao.cs" />
-    <Compile Include="dao\SystemUnitDao.cs" />
     <Compile Include="db\CPURepository.cs" />
     <Compile Include="db\dbHandler.cs" />
     <Compile Include="db\MotherboardRepository.cs" />
     <Compile Include="db\PowerSupplyRepository.cs" />
     <Compile Include="db\RAMRepository.cs" />
     <Compile Include="db\SysteUnitRepository.cs" />
+    <Compile Include="dto\CPUDto.cs" />
+    <Compile Include="dto\CPUTypes.cs" />
+    <Compile Include="dto\MotherboardDto.cs" />
+    <Compile Include="dto\MotherboardTypes.cs" />
+    <Compile Include="dto\PowerSupplyDto.cs" />
+    <Compile Include="dto\RAMDto.cs" />
+    <Compile Include="dto\RAMTypes.cs" />
+    <Compile Include="dto\SystemUnitDto.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -82,15 +85,11 @@
   <ItemGroup>
     <Compile Include="model\ComputerBuilder.cs" />
     <Compile Include="model\CPU.cs" />
-    <Compile Include="dao\CPUTypes.cs" />
-    <Compile Include="model\ElectronicСomponent.cs" />
     <Compile Include="model\EntytyConverter.cs" />
     <Compile Include="model\IConvertebelFromDao.cs" />
     <Compile Include="model\Motherboard.cs" />
-    <Compile Include="dao\MotherboardTypes.cs" />
     <Compile Include="model\PowerSupply.cs" />
     <Compile Include="model\RAM.cs" />
-    <Compile Include="dao\RAMTypes.cs" />
     <Compile Include="model\SystemUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -1,4 +1,4 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using Lab1Code.model;
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ namespace Lab1.db
 {
     class CPURepository
     {
-        public static List<CPUDao> findAll()
+        public static List<CPUDto> findAll()
         {
-            List<CPUDao> cPUs = new List<CPUDao>();
-            cPUs.Add(new CPUDao(CPUTypes.SMOLLE, 200));
-            cPUs.Add(new CPUDao(CPUTypes.BIG, 300));
+            List<CPUDto> cPUs = new List<CPUDto>();
+            cPUs.Add(new CPUDto(CPUTypes.SMOLLE, 200));
+            cPUs.Add(new CPUDto(CPUTypes.BIG, 300));
             return cPUs;
         }
     }

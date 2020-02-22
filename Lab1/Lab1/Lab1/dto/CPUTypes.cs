@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.dao
+namespace Lab1.dto
 {
-    public enum RAMTypes
+    public enum CPUTypes
     {
         BIG,
         SMOLLE

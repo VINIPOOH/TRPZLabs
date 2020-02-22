@@ -1,4 +1,4 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using Lab1.model;
 using System;
 using System.Collections.Generic;
@@ -8,25 +8,35 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class PowerSupply : ElectronicСomponent, IConvertebelFromDao <PowerSupply, PowerSupplyDao>
+    class PowerSupply 
     {
-        private int volume;
+        
+        private PowerSupplyDto powerSupplyDtoAdaptee;
 
-        public PowerSupply(int volume, int usingPover) : base(usingPover)
+        public PowerSupply( int usingPover, int volume)
         {
-            this.volume = volume;
+            powerSupplyDtoAdaptee=new PowerSupplyDto(usingPover,volume);
         }
 
-        public PowerSupply(PowerSupplyDao power): base(power.UsingPover)
+        public PowerSupply(PowerSupplyDto power)
         {
-            this.volume = power.Volume;
+            powerSupplyDtoAdaptee = power;
         }
 
-        public int Volume { get => volume; set => volume = value; }
+        
 
-        public PowerSupply DaoObjectToModelObject(PowerSupplyDao typeFrom)
+        public PowerSupplyDto PowerSupplyDtoAdaptee
         {
-            return new PowerSupply(typeFrom);
+            get => powerSupplyDtoAdaptee;
+            set => powerSupplyDtoAdaptee = value;
+        }
+        public int Volume { get => powerSupplyDtoAdaptee.Volume;
+            set => powerSupplyDtoAdaptee.Volume = value; }
+
+        public int UsingPover
+        {
+            get => powerSupplyDtoAdaptee.UsingPover;
+            set => powerSupplyDtoAdaptee.UsingPover = value;
         }
     }
 }

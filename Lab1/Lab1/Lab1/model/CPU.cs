@@ -1,5 +1,5 @@
 ﻿
-using Lab1.dao;
+using Lab1.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,20 +8,36 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    public class CPU : ElectronicСomponent
+    public class CPU 
     {
-        private CPUTypes cpuTypes;
+        private CPUDto cpuDtoAdaptee;
 
-        public CPU(CPUTypes cpuTypes, int usingPover) : base(usingPover)
+        public CPU(CPUTypes cpuTypes, int usingPover)
         {
-            this.cpuTypes = cpuTypes;
+            this.cpuDtoAdaptee = new CPUDto(cpuTypes, usingPover);
         }
 
-        public CPU(CPUDao cPUDao) : base(cPUDao.UsingPover)
+        public CPU(CPUDto cPuDto)
         {
-            this.cpuTypes = cPUDao.CpuTypes;
+            this.cpuDtoAdaptee = cPuDto;
         }
 
-        public CPUTypes CpuTypes { get => cpuTypes; set => cpuTypes = value; }
+        public CPUDto CpuDtoAdaptee
+        {
+            get => cpuDtoAdaptee;
+            set => cpuDtoAdaptee = value;
+        }
+
+        public CPUTypes CpuTypes
+        {
+            get => cpuDtoAdaptee.CpuTypes; 
+            set => cpuDtoAdaptee.CpuTypes = value;
+        }
+
+        public int UsingPover
+        {
+            get => cpuDtoAdaptee.UsingPover;
+            set => cpuDtoAdaptee.UsingPover = value;
+        }
     }
 }

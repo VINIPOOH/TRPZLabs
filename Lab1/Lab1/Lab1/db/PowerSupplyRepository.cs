@@ -1,4 +1,4 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using Lab1Code.model;
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ namespace Lab1.db
 {
     class PowerSupplyRepository
     {
-        public static List<PowerSupplyDao> findAll()
+        public static List<PowerSupplyDto> findAll()
         {
-            List<PowerSupplyDao>  powerSupplies = new List<PowerSupplyDao>();
-            powerSupplies.Add(new PowerSupplyDao(300, -2));
-            powerSupplies.Add(new PowerSupplyDao(300, 2));
+            List<PowerSupplyDto>  powerSupplies = new List<PowerSupplyDto>();
+            powerSupplies.Add(new PowerSupplyDto(300, -2));
+            powerSupplies.Add(new PowerSupplyDto(300, 2));
             return powerSupplies;
         }
     }

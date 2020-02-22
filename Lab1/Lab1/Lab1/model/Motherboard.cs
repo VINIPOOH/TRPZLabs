@@ -1,95 +1,85 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using System;
 
 namespace Lab1Code.model
 {
-    class Motherboard : ElectronicСomponent
+    class Motherboard
     {
-        private MotherboardTypes motherboardTypes;
-        private RAMTypes rAMType;
-        private CPUTypes cPUTypes;
-        private CPU cpu=null;
-        private RAM ram=null;
+        private MotherboardDto motherboardDtoAdaptee;
 
-        public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
-        public RAMTypes RAMType { get => rAMType; set => rAMType = value; }
-        public CPUTypes CPUTypes { get => cPUTypes; set => cPUTypes = value; }
-        internal CPU Cpu { get => cpu; set => cpu = value; }
-        internal RAM Ram { get => ram; set => ram = value; }
-
-        public Motherboard(MotherboardDao motherboardDao): base(motherboardDao.UsingPover)
+        public MotherboardTypes MotherboardTypes { get => motherboardDtoAdaptee.MotherboardTypes; 
+            set => motherboardDtoAdaptee.MotherboardTypes = value; }
+        public RAMTypes RAMType { get => motherboardDtoAdaptee.RAMType; set => motherboardDtoAdaptee.RAMType = value; }
+        public CPUTypes CPUTypes { get => motherboardDtoAdaptee.CPUTypes; set => motherboardDtoAdaptee.CPUTypes = value; }
+        internal CPU Cpu
         {
-            this.motherboardTypes = motherboardDao.MotherboardTypes;
-            this.rAMType = motherboardDao.RAMType;
-            this.cPUTypes = motherboardDao.CPUTypes;
-            if (motherboardDao.Cpu == null)
-            {
-                this.cpu = null;
-            }
-            else
-            {
-                this.cpu = new CPU(motherboardDao.Cpu);
-            }
-            if (motherboardDao.Ram==null)
-            {
-                this.ram = null;
-            }
-            else
-            {
-                this.ram = new RAM(motherboardDao.Ram);
-            }
-            
+            get => new CPU(motherboardDtoAdaptee.CpuDto);
+            set => motherboardDtoAdaptee.CpuDto = value.CpuDtoAdaptee; }
+        internal RAM Ram { get => new RAM(motherboardDtoAdaptee.RamDto);
+            set => motherboardDtoAdaptee.RamDto = value.RamDtoAdaptee; }
+
+        public Motherboard(MotherboardDto motherboardDto)
+        {
+            motherboardDtoAdaptee = motherboardDto;
         }
 
-        public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, int usingPover) : base(usingPover)
+        public Motherboard(MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, int usingPover)
         {
-            this.motherboardTypes = motherboardTypes;
-            this.rAMType = rAMType;
-            this.cPUTypes = cPUTypes;
-            
+            motherboardDtoAdaptee.MotherboardTypes = motherboardTypes;
+            motherboardDtoAdaptee.RAMType = rAMType;
+            motherboardDtoAdaptee.CPUTypes = cPUTypes;
+            motherboardDtoAdaptee.UsingPover=usingPover;
+
+        }
+
+        public MotherboardDto MotherboardDtoAdaptee
+        {
+            get => motherboardDtoAdaptee;
+            set => motherboardDtoAdaptee = value;
         }
 
         public override string ToString()
         {
             String toReturn = "";
-            if (cpu == null)
+            if (motherboardDtoAdaptee.CpuDto == null)
             {
                 toReturn += "cpu" + "null";
             }
             else
             {
-                toReturn += "cpu" + cpu.ToString();
+                toReturn += "cpu" + motherboardDtoAdaptee.CpuDto.ToString();
             }
-            if (ram == null)
+            if (motherboardDtoAdaptee.RamDto == null)
             {
                 toReturn += "ram" + "null";
             }
             else
             {
-                toReturn += "ram" + ram.ToString();
+                toReturn += "ram" + motherboardDtoAdaptee.RamDto.ToString();
             }
             return toReturn;
         }
 
         public bool isComponCorrect()
         {
-            if (cpu==null||ram==null)
+            if (motherboardDtoAdaptee.CpuDto==null||motherboardDtoAdaptee.RamDto==null)
             {
                 
                 return false;
             }
-            if (cpu.CpuTypes.Equals(cPUTypes)&&ram.RAMTypes.Equals(rAMType))
+            if (motherboardDtoAdaptee.CpuDto.CpuTypes.Equals(motherboardDtoAdaptee.CPUTypes)
+                &&motherboardDtoAdaptee.RamDto.RAMTypes.Equals(motherboardDtoAdaptee.RAMType))
             {
                 
                 return true;
             }else{
                 return false;
             }
-
         }
         public int countPowerOfMatherbordAndComponents()
         {
-            return this.UsingPover + cpu.UsingPover + ram.UsingPover;
+            return motherboardDtoAdaptee.UsingPover + motherboardDtoAdaptee.CpuDto.UsingPover
+                                                    + motherboardDtoAdaptee.RamDto.UsingPover;
         }
     }
 }

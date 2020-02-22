@@ -1,23 +1,28 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 
 namespace Lab1Code.model
 {
-    class RAM : ElectronicСomponent
+    class RAM
     {
-        private RAMTypes rAMTypes;
+        private RAMDto ramDtoAdaptee;
 
-        public RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
+        public RAMTypes RAMTypes { get => ramDtoAdaptee.RAMTypes;
+            set => ramDtoAdaptee.RAMTypes = value; }
 
-        public RAM(RAMDao rAMDao) : base(rAMDao.UsingPover)
+        public RAM(RAMDto rAmDto) 
         {
-            this.rAMTypes = rAMDao.RAMTypes;
+            ramDtoAdaptee= rAmDto;
         }
 
-        public RAM(RAMTypes rAMTypes, int usingPover) : base(usingPover)
+        public RAM(RAMTypes rAMTypes, int usingPover)
         {
-            this.rAMTypes = rAMTypes;
+            ramDtoAdaptee= new RAMDto(rAMTypes, usingPover);
         }
 
-        
+        public RAMDto RamDtoAdaptee
+        {
+            get => ramDtoAdaptee;
+            set => ramDtoAdaptee = value;
+        }
     }
 }

@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.dao
+namespace Lab1.dto
 {
-    public class MotherboardDao
+    public class MotherboardDto
     {
         private int usingPover;
         private MotherboardTypes motherboardTypes;
         private RAMTypes rAMType;
         private CPUTypes cPUTypes;
-        private CPUDao cpu = null;
-        private RAMDao ram = null;
+        private CPUDto cpuDtoDto = null;
+        private RAMDto ramDtoDto = null;
 
-        public MotherboardDao(int usingPover, MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, CPUDao cpu, RAMDao ram)
+        public MotherboardDto(int usingPover, MotherboardTypes motherboardTypes, RAMTypes rAMType, CPUTypes cPUTypes, CPUDto cpuDtoDto, RAMDto ramDtoDto)
         {
             this.usingPover = usingPover;
             this.motherboardTypes = motherboardTypes;
             this.rAMType = rAMType;
             this.cPUTypes = cPUTypes;
-            this.cpu = cpu;
-            this.ram = ram;
+            this.cpuDtoDto = cpuDtoDto;
+            this.ramDtoDto = ramDtoDto;
         }
 
         public int UsingPover { get => usingPover; set => usingPover = value; }
@@ -30,8 +30,8 @@ namespace Lab1.dao
         
         internal MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
         internal RAMTypes RAMType { get => rAMType; set => rAMType = value; }
-        internal CPUDao Cpu { get => cpu; set => cpu = value; }
-        internal RAMDao Ram { get => ram; set => ram = value; }
+        internal CPUDto CpuDto { get => cpuDtoDto; set => cpuDtoDto = value; }
+        internal RAMDto RamDto { get => ramDtoDto; set => ramDtoDto = value; }
         
     }
 }

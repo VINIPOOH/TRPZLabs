@@ -1,4 +1,4 @@
-﻿using Lab1.dao;
+﻿using Lab1.dto;
 using Lab1.db;
 using Lab1.model;
 using System.Collections.Generic;
@@ -62,7 +62,7 @@ namespace Lab1Code.model
             {
                 return false;
             }
-            componResult.Motherboard.Ram = rAMs[id];
+            componResult.Motherboard.Ram = new RAM(rAMs[id].RamDtoAdaptee);
             return true;
 
         }
@@ -73,7 +73,7 @@ namespace Lab1Code.model
             {
                 return false;
             }
-            componResult.Motherboard.Cpu = cPUs[id];
+            componResult.Motherboard.Cpu = new CPU(cPUs[id].CpuDtoAdaptee);
             return true;
         }
         

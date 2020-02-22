@@ -7,40 +7,40 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="db" t="Include">
+          <e p="CPURepository.cs" t="Include" />
+          <e p="dbHandler.cs" t="Include" />
+          <e p="MotherboardRepository.cs" t="Include" />
+          <e p="PowerSupplyRepository.cs" t="Include" />
+          <e p="RAMRepository.cs" t="Include" />
+          <e p="SysteUnitRepository.cs" t="Include" />
+        </e>
+        <e p="dto" t="Include">
+          <e p="CPUDto.cs" t="Include" />
+          <e p="CPUTypes.cs" t="Include" />
+          <e p="MotherboardDto.cs" t="Include" />
+          <e p="MotherboardTypes.cs" t="Include" />
+          <e p="PowerSupplyDto.cs" t="Include" />
+          <e p="RAMDto.cs" t="Include" />
+          <e p="RAMTypes.cs" t="Include" />
+          <e p="SystemUnitDto.cs" t="Include" />
+        </e>
         <e p="Lab1.csproj" t="IncludeRecursive" />
         <e p="MainWindow.xaml" t="Include" />
         <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="model" t="Include">
+          <e p="ComputerBuilder.cs" t="Include" />
+          <e p="CPU.cs" t="Include" />
+          <e p="EntytyConverter.cs" t="Include" />
+          <e p="IConvertebelFromDao.cs" t="Include" />
+          <e p="Motherboard.cs" t="Include" />
+          <e p="PowerSupply.cs" t="Include" />
+          <e p="RAM.cs" t="Include" />
+          <e p="SystemUnit.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
-          <e p="db" t="Include">
-            <e p="CPURepository.cs" t="Include" />
-            <e p="dbHandler.cs" t="Include" />
-            <e p="MotherboardRepository.cs" t="Include" />
-            <e p="PowerSupplyRepository.cs" t="Include" />
-            <e p="RAMRepository.cs" t="Include" />
-            <e p="SysteUnitRepository.cs" t="Include" />
-          </e>
-          <e p="dto" t="Include">
-            <e p="CPUDto.cs" t="Include" />
-            <e p="CPUTypes.cs" t="Include" />
-            <e p="MotherboardDto.cs" t="Include" />
-            <e p="MotherboardTypes.cs" t="Include" />
-            <e p="PowerSupplyDto.cs" t="Include" />
-            <e p="RAMDto.cs" t="Include" />
-            <e p="RAMTypes.cs" t="Include" />
-            <e p="SystemUnitDto.cs" t="Include" />
-          </e>
-          <e p="model" t="Include">
-            <e p="ComputerBuilder.cs" t="Include" />
-            <e p="CPU.cs" t="Include" />
-            <e p="EntytyConverter.cs" t="Include" />
-            <e p="IConvertebelFromDao.cs" t="Include" />
-            <e p="Motherboard.cs" t="Include" />
-            <e p="PowerSupply.cs" t="Include" />
-            <e p="RAM.cs" t="Include" />
-            <e p="SystemUnit.cs" t="Include" />
-          </e>
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
           <e p="Settings.Designer.cs" t="Include" />
