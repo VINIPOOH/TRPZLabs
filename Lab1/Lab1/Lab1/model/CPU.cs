@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab1.model;
 
 namespace Lab1Code.model
 {
-    public class CPU 
+    public class CPU : IAdapter<CPUDto>
     {
         private CPUDto cpuDtoAdaptee;
 
@@ -38,6 +39,20 @@ namespace Lab1Code.model
         {
             get => cpuDtoAdaptee.UsingPover;
             set => cpuDtoAdaptee.UsingPover = value;
+        }
+
+        public CPUDto GetAdaptee()
+        {
+            return cpuDtoAdaptee;
+        }
+
+        public void SetAdaptee(CPUDto adaptee)
+        {
+            cpuDtoAdaptee=adaptee;
+        }
+
+        public CPU()
+        {
         }
     }
 }

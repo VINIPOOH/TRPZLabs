@@ -1,9 +1,10 @@
 ﻿using Lab1.dto;
 using System;
+using Lab1.model;
 
 namespace Lab1Code.model
 {
-    class Motherboard
+    class Motherboard:IAdapter<MotherboardDto>
     {
         private MotherboardDto motherboardDtoAdaptee;
 
@@ -80,6 +81,20 @@ namespace Lab1Code.model
         {
             return motherboardDtoAdaptee.UsingPover + motherboardDtoAdaptee.CpuDto.UsingPover
                                                     + motherboardDtoAdaptee.RamDto.UsingPover;
+        }
+
+        public MotherboardDto GetAdaptee()
+        {
+            return motherboardDtoAdaptee;
+        }
+
+        public void SetAdaptee(MotherboardDto adaptee)
+        {
+            motherboardDtoAdaptee = adaptee;
+        }
+
+        public Motherboard()
+        {
         }
     }
 }

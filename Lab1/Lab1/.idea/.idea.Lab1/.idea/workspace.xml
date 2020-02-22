@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc3076ce-c8f5-4b7d-aa01-dcc7ff674cb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1/model/IAdapter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Lab1/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Lab1/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Lab1/v16/Server/sqlite3/storage.ide-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/Lab1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Lab1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/Lab1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/Lab1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/Lab1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/CPUTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/CPUTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/CPUdao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/CPUDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/MotherboardDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/MotherboardDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/MotherboardTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/MotherboardTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/PowerSupplyDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/PowerSupplyDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/RAMDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/RAMDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/RAMTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/RAMTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/dao/SystemUnitDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/db/CPURepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/CPURepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/db/PowerSupplyRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/PowerSupplyRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/db/RAMRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/RAMRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/db/SysteUnitRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/SysteUnitRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/CPU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/CPU.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/model/ElectronicСomponent.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/model/IConvertebelFromDao.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/Motherboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/Motherboard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/PowerSupply.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/PowerSupply.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/model/RAM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/RAM.cs" afterDir="false" />
@@ -39,16 +33,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Lab1/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab1/model/SystemUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/7d/de25ca4f/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/IAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab1/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/PowerSupply.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/Motherboard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/SystemUnit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/RAM.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/model/CPU.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab1/App.config" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -59,7 +68,6 @@
         <option value="$PROJECT_DIR$/Lab1/dto/PowerSupplyDto.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/MotherboardTypes.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/CPUTypes.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/CPURepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/PowerSupplyRepository.cs" />
@@ -67,16 +75,9 @@
         <option value="$PROJECT_DIR$/Lab1/db/SysteUnitRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/ElectronicComponentDto.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/CPUDto.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/CPU.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/RAM.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/MotherboardDto.cs" />
-        <option value="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/Motherboard.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/PowerSupply.cs" />
-        <option value="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/model/EntytyConverter.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/model/ComputerBuilder.cs" />
-        <option value="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/model/SystemUnit.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/dto/CPUDto.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/dto/PowerSupplyDto.cs" />
@@ -87,7 +88,17 @@
         <option value="$PROJECT_DIR$/Lab1/Properties/model/PowerSupply.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/model/RAM.cs" />
         <option value="$PROJECT_DIR$/Lab1/Properties/dto/SystemUnitDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/IAdapter.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/RAM.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/CPU.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/Motherboard.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/PowerSupply.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/Lab1/model/SystemUnit.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/MVC.puml" />
       </list>
     </option>
   </component>
@@ -104,9 +115,11 @@
     <option name="STATE" value="1" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,7 +165,7 @@
       <updated>1582377851025</updated>
       <workItem from="1582377856747" duration="5092000" />
       <workItem from="1582383581123" duration="3501000" />
-      <workItem from="1582387107355" duration="536000" />
+      <workItem from="1582387107355" duration="4039000" />
     </task>
     <servers />
   </component>

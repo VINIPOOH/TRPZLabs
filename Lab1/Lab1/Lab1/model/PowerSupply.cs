@@ -8,9 +8,12 @@ using System.Threading.Tasks;
 
 namespace Lab1Code.model
 {
-    class PowerSupply 
+    class PowerSupply : IAdapter<PowerSupplyDto>
     {
-        
+        public PowerSupply()
+        {
+        }
+
         private PowerSupplyDto powerSupplyDtoAdaptee;
 
         public PowerSupply( int usingPover, int volume)
@@ -37,6 +40,16 @@ namespace Lab1Code.model
         {
             get => powerSupplyDtoAdaptee.UsingPover;
             set => powerSupplyDtoAdaptee.UsingPover = value;
+        }
+
+        public PowerSupplyDto GetAdaptee()
+        {
+            return powerSupplyDtoAdaptee;
+        }
+
+        public void SetAdaptee(PowerSupplyDto adaptee)
+        {
+            powerSupplyDtoAdaptee = adaptee;
         }
     }
 }

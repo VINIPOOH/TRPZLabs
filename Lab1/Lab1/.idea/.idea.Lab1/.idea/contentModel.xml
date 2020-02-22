@@ -32,12 +32,13 @@
           <e p="ComputerBuilder.cs" t="Include" />
           <e p="CPU.cs" t="Include" />
           <e p="EntytyConverter.cs" t="Include" />
-          <e p="IConvertebelFromDao.cs" t="Include" />
+          <e p="IAdapter.cs" t="Include" />
           <e p="Motherboard.cs" t="Include" />
           <e p="PowerSupply.cs" t="Include" />
           <e p="RAM.cs" t="Include" />
           <e p="SystemUnit.cs" t="Include" />
         </e>
+        <e p="MVC.puml" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />

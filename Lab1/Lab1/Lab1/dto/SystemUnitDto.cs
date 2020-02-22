@@ -22,8 +22,34 @@ namespace Lab1.dto
 
         public int MaxPoverSupplyVolume { get => maxPoverSupplyVolume; set => maxPoverSupplyVolume = value; }
         public string Name { get => name; set => name = value; }
-        internal MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
+        public MotherboardTypes MotherboardTypes { get => motherboardTypes; set => motherboardTypes = value; }
         internal MotherboardDto MotherboardDto { get => motherboardDtoDto; set => motherboardDtoDto = value; }
         internal PowerSupplyDto PowerSupplyDto { get => powerSupplyDtoDto; set => powerSupplyDtoDto = value; }
+
+        public override string ToString()
+        {
+            String toRetutn="название корпуса"+Name +
+                            " "+ "maxPoverSupplyVolume"+ MaxPoverSupplyVolume
+                            + "motherboardTypes"+ MotherboardTypes;
+
+            if (MotherboardDto==null)
+            {
+                toRetutn += "matplata  null";
+            }
+            else
+            {
+                toRetutn += MotherboardDto.ToString();
+            }
+            if (PowerSupplyDto==null)
+            {
+                toRetutn += "blokk pitania  null";
+            }
+            else
+            {
+                toRetutn += PowerSupplyDto.ToString();
+            }
+            
+            return toRetutn;
+        }
     }
 }

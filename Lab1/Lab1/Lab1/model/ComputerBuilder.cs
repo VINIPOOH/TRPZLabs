@@ -15,33 +15,53 @@ namespace Lab1Code.model
         private List<PowerSupply> powerSupplies;
         private SystemUnit componResult;
 
-        internal List<SystemUnit> SystemUnits { get => systemUnits; set => systemUnits = value; }
-        internal List<Motherboard> Motherboards { get => motherboards; set => motherboards = value; }
-        public List<CPU> CPUs { get => cPUs; set => cPUs = value; }
-        internal List<RAM> RAMs { get => rAMs; set => rAMs = value; }
-        internal List<PowerSupply> PowerSupplies { get => powerSupplies; set => powerSupplies = value; }
-        internal SystemUnit ComponResult { get => componResult; set => componResult = value; }
+
+
+
+        internal List<SystemUnitDto> SystemUnits()
+        {
+            return EntytyConverter.GetAdapteesFromAdapters<SystemUnitDto,SystemUnit>(systemUnits);
+        }
+
+        internal List<MotherboardDto> Motherboards()
+        {
+            return EntytyConverter.GetAdapteesFromAdapters<MotherboardDto,Motherboard>(motherboards);
+        }
+
+        public List<CPUDto> CPUs()
+        {
+            return EntytyConverter.GetAdapteesFromAdapters<CPUDto,CPU>(cPUs);
+        }
+
+        internal List<RAMDto> RAMs()
+        {
+            return EntytyConverter.GetAdapteesFromAdapters<RAMDto,RAM>(rAMs);
+            
+        }
+
+        internal List<PowerSupplyDto> PowerSupplies()
+        {
+            return EntytyConverter.GetAdapteesFromAdapters<PowerSupplyDto,PowerSupply>(powerSupplies);
+            
+        }
+
+        internal SystemUnitDto ComponResult()
+        {
+            return componResult.GetAdaptee();
+        }
+        
+        
 
         public ComputerBuilder()
         {
-            //заполнить списки
-
-            systemUnits = EntytyConverter.SystemUnitDaoToSystemUnit(SysteUnitRepository.findAll());
-            
-
-            motherboards = EntytyConverter.MotherboardDaoToMotherboard(MotherboardRepository.findAll());
-
-
-            cPUs = EntytyConverter.CPUDaoToCPU(CPURepository.findAll());
-
-            rAMs = EntytyConverter.RAMUnitDaoToRAM(RAMRepository.findAll());
-
-            powerSupplies = EntytyConverter.PowerSupplyDaoToPowerSupply(PowerSupplyRepository.findAll());
-
+            systemUnits = EntytyConverter.SetAdapteesInAdapters<SystemUnitDto, SystemUnit>(SysteUnitRepository.findAll());
+           motherboards = EntytyConverter.SetAdapteesInAdapters<MotherboardDto,Motherboard>(MotherboardRepository.findAll());
+            cPUs = EntytyConverter.SetAdapteesInAdapters<CPUDto, CPU>(CPURepository.findAll());
+            rAMs = EntytyConverter.SetAdapteesInAdapters<RAMDto,RAM>(RAMRepository.findAll());
+            powerSupplies = EntytyConverter.SetAdapteesInAdapters<PowerSupplyDto,PowerSupply>(PowerSupplyRepository.findAll());
             componResult = new SystemUnit(MotherboardTypes.BIG, 500, "DEFAULT");
         }
-
-       
+     
 
         public bool setChooseSystemUnit(int id)
         {

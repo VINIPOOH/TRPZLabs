@@ -11,62 +11,27 @@ namespace Lab1.model
 {
     class EntytyConverter
     {
-        public static List<SystemUnit> SystemUnitDaoToSystemUnit(List<SystemUnitDto> systemUnitDaos)
+        public static List<TypeAdapter> SetAdapteesInAdapters
+            <TypeAdaptee, TypeAdapter>(List<TypeAdaptee> adaptees)
+        where TypeAdapter:IAdapter<TypeAdaptee>, new()
         {
-            List<SystemUnit> toReturn = new List<SystemUnit>();
-            foreach (SystemUnitDto s in systemUnitDaos)
+            List<TypeAdapter> toReturn = new List<TypeAdapter>();
+            foreach (TypeAdaptee s in adaptees)
             {
-                toReturn.Add(new SystemUnit(s));
+                TypeAdapter adapter=new TypeAdapter();
+                adapter.SetAdaptee(s);
+                toReturn.Add(adapter);
             }
             return toReturn;
         }
-        public static List<Motherboard> MotherboardDaoToMotherboard(List<MotherboardDto> motherboards)
+        public static List<TypeAdaptee> GetAdapteesFromAdapters
+            <TypeAdaptee, TypeAdapter>(List<TypeAdapter> adapters)
+        where TypeAdapter:IAdapter<TypeAdaptee>
         {
-            List<Motherboard> toReturn = new List<Motherboard>();
-            foreach (MotherboardDto s in motherboards)
+            List<TypeAdaptee> toReturn = new List<TypeAdaptee>();
+            foreach (IAdapter<TypeAdaptee> s in adapters)
             {
-                toReturn.Add(new Motherboard(s));
-            }
-            return toReturn;
-        }
-        public static List<CPU> CPUDaoToCPU(List<CPUDto> systemUnitDaos)
-        {
-            List<CPU> toReturn = new List<CPU>();
-            foreach (CPUDto s in systemUnitDaos)
-            {
-                toReturn.Add(new CPU(s));
-            }
-            return toReturn;
-        }
-        public static List<RAM> RAMUnitDaoToRAM(List<RAMDto> systemUnitDaos)
-        {
-            List<RAM> toReturn = new List<RAM>();
-            foreach (RAMDto s in systemUnitDaos)
-            {
-                toReturn.Add(new RAM(s));
-            }
-            return toReturn;
-        }
-        public static List<PowerSupply> PowerSupplyDaoToPowerSupply(List<PowerSupplyDto> systemUnitDaos)
-        {
-            List<PowerSupply> toReturn = new List<PowerSupply>();
-            foreach (PowerSupplyDto s in systemUnitDaos)
-            {
-                toReturn.Add(new PowerSupply(s));
-            }
-            return toReturn;
-        }
-
-
-
-        public static List<TypeInWhichConvert> SystemUnitDaoToSystemUnit<TypeInWhichConvert 
-            , TypeFromWhichConvert>(List<TypeFromWhichConvert> typeFroms) where TypeFromWhichConvert: IConvertebelFromDao<TypeInWhichConvert, TypeFromWhichConvert>
-        {
-
-            List<TypeInWhichConvert> toReturn = new List<TypeInWhichConvert>();
-            foreach (TypeFromWhichConvert s in typeFroms)
-            {
-              //  toReturn.Add((TypeFromWhichConvert));
+                toReturn.Add(s.GetAdaptee());
             }
             return toReturn;
         }

@@ -26,16 +26,13 @@ namespace Lab1
         {
             InitializeComponent();
 
-            MotherboardGreedView.ItemsSource = computerBuilder.Motherboards;
-            SystemUnitsGreedView.ItemsSource = computerBuilder.SystemUnits;
-           
+            MotherboardGreedView.ItemsSource = computerBuilder.Motherboards();
+            SystemUnitsGreedView.ItemsSource = computerBuilder.SystemUnits();
+            CPUGreedView.ItemsSource = computerBuilder.CPUs();
+            RamGreedView.ItemsSource = computerBuilder.RAMs();
+            PowerSupplyGreedView.ItemsSource = computerBuilder.PowerSupplies();
 
-
-            CPUGreedView.ItemsSource = computerBuilder.CPUs;
-            RamGreedView.ItemsSource = computerBuilder.RAMs;
-            PowerSupplyGreedView.ItemsSource = computerBuilder.PowerSupplies;
-
-            ResultChoosesTextBox.Text = computerBuilder.ComponResult.ToString();
+            ResultChoosesTextBox.Text = computerBuilder.ComponResult().ToString();
         }
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
@@ -51,7 +48,7 @@ namespace Lab1
 
         private void ReloadCompone_Click(object sender, RoutedEventArgs e)
         {
-            ResultChoosesTextBox.Text = computerBuilder.ComponResult.ToString();
+            ResultChoosesTextBox.Text = computerBuilder.ComponResult().ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

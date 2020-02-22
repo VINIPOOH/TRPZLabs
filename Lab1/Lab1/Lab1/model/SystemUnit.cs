@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lab1.dto;
+using Lab1.model;
 
 namespace Lab1Code.model
 {
-    class SystemUnit
+    class SystemUnit : IAdapter<SystemUnitDto>
     {
         private SystemUnitDto systemUnitDtoAdaptee;
 
@@ -32,11 +33,8 @@ namespace Lab1Code.model
 
         public override string ToString()
         {
-            String toRetutn="название корпуса"+systemUnitDtoAdaptee.Name +
-                            " "+ "maxPoverSupplyVolume"+ systemUnitDtoAdaptee.MaxPoverSupplyVolume
-            + "motherboardTypes"+ systemUnitDtoAdaptee.MotherboardTypes;
             
-            return toRetutn;
+            return systemUnitDtoAdaptee.ToString();
         }
 
         public SystemUnit(MotherboardTypes motherboardTypes, int maxPoverSupplyVolume, string name)
@@ -82,6 +80,20 @@ namespace Lab1Code.model
                 return false;
             }
 
+        }
+
+        public SystemUnitDto GetAdaptee()
+        {
+            return systemUnitDtoAdaptee;
+        }
+
+        public void SetAdaptee(SystemUnitDto adaptee)
+        {
+            systemUnitDtoAdaptee = adaptee;
+        }
+
+        public SystemUnit()
+        {
         }
     }
 }

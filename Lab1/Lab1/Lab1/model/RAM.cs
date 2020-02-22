@@ -1,10 +1,15 @@
 ﻿using Lab1.dto;
+using Lab1.model;
 
 namespace Lab1Code.model
 {
-    class RAM
+    class RAM : IAdapter<RAMDto>
     {
         private RAMDto ramDtoAdaptee;
+
+        public RAM()
+        {
+        }
 
         public RAMTypes RAMTypes { get => ramDtoAdaptee.RAMTypes;
             set => ramDtoAdaptee.RAMTypes = value; }
@@ -23,6 +28,16 @@ namespace Lab1Code.model
         {
             get => ramDtoAdaptee;
             set => ramDtoAdaptee = value;
+        }
+
+        public RAMDto GetAdaptee()
+        {
+            return ramDtoAdaptee;
+        }
+
+        public void SetAdaptee(RAMDto adaptee)
+        {
+            ramDtoAdaptee=adaptee;
         }
     }
 }
