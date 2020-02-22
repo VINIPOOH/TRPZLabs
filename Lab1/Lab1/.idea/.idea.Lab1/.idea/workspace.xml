@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc3076ce-c8f5-4b7d-aa01-dcc7ff674cb4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lab1/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/7d/de25ca4f/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab1/App.config" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Lab1/dto/RAMTypes.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/RAMDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/PowerSupplyDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/MotherboardTypes.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/CPUTypes.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/EntytyConverter.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/CPURepository.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/PowerSupplyRepository.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/RAMRepository.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/SysteUnitRepository.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/ElectronicComponentDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/CPUDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/CPU.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/RAM.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/MotherboardDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/dto/SystemUnitDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/Motherboard.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/PowerSupply.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/SystemUnit.cs" />
+        <option value="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/EntytyConverter.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/ComputerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/SystemUnit.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/dto/CPUDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/dto/PowerSupplyDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/dto/RAMDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/dto/MotherboardDto.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/CPU.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/Motherboard.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/PowerSupply.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/model/RAM.cs" />
+        <option value="$PROJECT_DIR$/Lab1/Properties/dto/SystemUnitDto.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="B:\Projects\GitHub\TRPZLabs\Lab1\Lab1\.idea\.idea.Lab1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YAGBMoCZjtk1xkY8cwg5Uf3NA4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Lab1/bin/Debug/Lab1.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lab1/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Lab1/Lab1.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.2" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc3076ce-c8f5-4b7d-aa01-dcc7ff674cb4" name="Default Changelist" comment="" />
+      <created>1582377851025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582377851025</updated>
+      <workItem from="1582377856747" duration="5092000" />
+      <workItem from="1582383581123" duration="3501000" />
+      <workItem from="1582387107355" duration="288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
