@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="5999.5" y="3252.0">db.PowerSupplyRepository</node>
+    <node x="6031.0" y="2989.5">dto.PowerSupplyDto</node>
+    <node x="2239.5" y="2292.0">db.MotherboardRepository</node>
+    <node x="1956.5" y="2212.0">db.CPURepository</node>
+    <node x="1275.5" y="2665.5">dto.MotherboardDto</node>
+    <node x="5271.0" y="2509.5">dto.RAMDto</node>
+    <node x="-25.0" y="3344.0">db.dbHandler</node>
+    <node x="2529.5" y="159.5">model.ComputerBuilder</node>
+    <node x="3934.5" y="1001.0">model.IAdapter</node>
+    <node x="688.5" y="2772.0">db.SysteUnitRepository</node>
+    <node x="4295.5" y="588.5">model.Motherboard</node>
+    <node x="2620.0" y="2224.0">dto.CPUTypes</node>
+    <node x="3946.5" y="687.5">model.RAM</node>
+    <node x="3485.0" y="1127.5">model.PowerSupply</node>
+    <node x="5035.5" y="2372.0">db.RAMRepository</node>
+    <node x="2595.0" y="1829.5">dto.CPUDto</node>
+    <node x="2908.0" y="1974.5">model.CPU</node>
+    <node x="4820.0" y="2304.0">dto.RAMTypes</node>
+    <node x="5674.0" y="2654.5">MainWindow</node>
+    <node x="77.0" y="2945.5">dto.SystemUnitDto</node>
+    <node x="3667.0" y="1024.0">model.EntytyConverter</node>
+    <node x="3143.5" y="1374.5">model.SystemUnit</node>
+    <node x="982.5" y="2304.0">dto.MotherboardTypes</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="db.MotherboardRepository" target="dto.MotherboardDto">
+      <point x="0.0" y="28.0" />
+      <point x="2360.0" y="2693.3333333333335" />
+      <point x="244.5" y="-66.66666666666652" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.MotherboardDto">
+      <point x="150.5" y="10.0" />
+      <point x="5520.0" y="330.0" />
+      <point x="5520.0" y="2753.3333333333335" />
+      <point x="244.5" y="-6.666666666666515" />
+    </edge>
+    <edge source="model.SystemUnit" target="model.PowerSupply">
+      <point x="40.0" y="-105.5" />
+      <point x="3320.0" y="1320.0" />
+      <point x="3600.0" y="1320.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="model.CPU" target="dto.CPUTypes">
+      <point x="0.0" y="105.5" />
+      <point x="3000.0" y="2230.0" />
+      <point x="60.0" y="-10.0" />
+    </edge>
+    <edge source="db.RAMRepository" target="dto.RAMTypes">
+      <point x="0.0" y="-28.0" />
+      <point x="5120.0" y="2330.0" />
+      <point x="60.0" y="10.0" />
+    </edge>
+    <edge source="model.CPU" target="dto.CPUDto">
+      <point x="-92.0" y="0.0" />
+      <point x="2720.0" y="2080.0" />
+      <point x="40.0" y="50.5" />
+    </edge>
+    <edge source="MainWindow" target="dto.PowerSupplyDto">
+      <point x="126.0" y="0.0" />
+      <point x="6080.0" y="2760.0" />
+      <point x="-40.0" y="-50.5" />
+    </edge>
+    <edge source="dto.SystemUnitDto" target="dto.MotherboardDto">
+      <point x="243.0" y="-26.666666666666515" />
+      <point x="1520.0" y="3013.3333333333335" />
+      <point x="0.0" y="94.5" />
+    </edge>
+    <edge source="MainWindow" target="dto.RAMDto">
+      <point x="-120.0" y="-105.5" />
+      <point x="5680.0" y="2560.0" />
+      <point x="89.0" y="0.0" />
+    </edge>
+    <edge source="MainWindow" target="dto.SystemUnitDto">
+      <point x="0.0" y="105.5" />
+      <point x="5800.0" y="3026.6666666666665" />
+      <point x="243.0" y="-13.333333333333485" />
+    </edge>
+    <edge source="dto.RAMDto" target="dto.RAMTypes">
+      <point x="-89.0" y="0.0" />
+      <point x="4880.0" y="2560.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="dto.MotherboardDto" target="dto.MotherboardTypes">
+      <point x="-244.5" y="-40.0" />
+      <point x="1080.0" y="2720.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="MainWindow" target="model.ComputerBuilder">
+      <point x="-40.0" y="-105.5" />
+      <point x="5760.0" y="80.0" />
+      <point x="2720.0" y="80.0" />
+      <point x="40.0" y="-160.5" />
+    </edge>
+    <edge source="model.Motherboard" target="dto.RAMTypes">
+      <point x="184.5" y="0.0" />
+      <point x="4880.0" y="760.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="model.EntytyConverter" target="model.IAdapter">
+      <point x="93.0" y="0.0" />
+      <point x="-105.5" y="0.0" />
+    </edge>
+    <edge source="model.SystemUnit" target="model.Motherboard">
+      <point x="0.0" y="105.5" />
+      <point x="3280.0" y="1680.0" />
+      <point x="4400.0" y="1680.0" />
+      <point x="-80.0" y="171.5" />
+    </edge>
+    <edge source="dto.MotherboardDto" target="dto.CPUTypes">
+      <point x="244.5" y="-60.0" />
+      <point x="2560.0" y="2700.0" />
+      <point x="2560.0" y="2250.0" />
+      <point x="-60.0" y="10.0" />
+    </edge>
+    <edge source="model.CPU" target="model.IAdapter">
+      <point x="92.0" y="-40.0" />
+      <point x="4040.0" y="2040.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="db.MotherboardRepository" target="dto.RAMTypes">
+      <point x="120.5" y="0.0" />
+      <point x="-60.0" y="0.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.CPUDto">
+      <point x="0.0" y="160.5" />
+      <point x="0.0" y="-50.5" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.PowerSupplyDto">
+      <point x="0.0" y="-160.5" />
+      <point x="2680.0" y="0.0" />
+      <point x="6120.0" y="0.0" />
+      <point x="0.0" y="-50.5" />
+    </edge>
+    <edge source="MainWindow" target="dto.CPUDto">
+      <point x="0.0" y="-105.5" />
+      <point x="5800.0" y="40.0" />
+      <point x="2440.0" y="40.0" />
+      <point x="2440.0" y="1840.0" />
+      <point x="-85.0" y="-40.0" />
+    </edge>
+    <edge source="db.CPURepository" target="dto.CPUTypes">
+      <point x="83.5" y="0.0" />
+      <point x="-60.0" y="0.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.RAM">
+      <point x="150.5" y="40.0" />
+      <point x="4040.0" y="360.0" />
+      <point x="0.0" y="-72.5" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.RAMDto">
+      <point x="150.5" y="20.0" />
+      <point x="5360.0" y="340.0" />
+      <point x="0.0" y="-50.5" />
+    </edge>
+    <edge source="dto.SystemUnitDto" target="dto.PowerSupplyDto">
+      <point x="0.0" y="94.5" />
+      <point x="320.0" y="3200.0" />
+      <point x="6080.0" y="3200.0" />
+      <point x="-40.0" y="50.5" />
+    </edge>
+    <edge source="model.SystemUnit" target="model.IAdapter">
+      <point x="136.5" y="0.0" />
+      <point x="4000.0" y="1480.0" />
+      <point x="-40.0" y="39.0" />
+    </edge>
+    <edge source="model.Motherboard" target="dto.CPUTypes">
+      <point x="-20.0" y="171.5" />
+      <point x="4460.0" y="2240.0" />
+      <point x="60.0" y="0.0" />
+    </edge>
+    <edge source="db.CPURepository" target="dto.CPUDto">
+      <point x="0.0" y="-28.0" />
+      <point x="2040.0" y="1910.0" />
+      <point x="-85.0" y="30.0" />
+    </edge>
+    <edge source="db.SysteUnitRepository" target="dto.SystemUnitDto">
+      <point x="-111.5" y="0.0" />
+      <point x="640.0" y="2800.0" />
+      <point x="640.0" y="2960.0" />
+      <point x="243.0" y="-80.0" />
+    </edge>
+    <edge source="model.Motherboard" target="model.RAM">
+      <point x="-184.5" y="0.0" />
+      <point x="93.5" y="0.0" />
+    </edge>
+    <edge source="db.PowerSupplyRepository" target="dto.PowerSupplyDto">
+      <point x="120.5" y="0.0" />
+      <point x="6320.0" y="3280.0" />
+      <point x="6320.0" y="3040.0" />
+      <point x="89.0" y="0.0" />
+    </edge>
+    <edge source="db.RAMRepository" target="dto.RAMDto">
+      <point x="-84.5" y="0.0" />
+      <point x="4960.0" y="2400.0" />
+      <point x="4960.0" y="2540.0" />
+      <point x="-89.0" y="-20.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.CPU">
+      <point x="150.5" y="120.0" />
+      <point x="3000.0" y="440.0" />
+      <point x="0.0" y="-105.5" />
+    </edge>
+    <edge source="model.Motherboard" target="dto.MotherboardTypes">
+      <point x="-60.0" y="171.5" />
+      <point x="4420.0" y="1720.0" />
+      <point x="1120.0" y="1720.0" />
+      <point x="40.0" y="-16.0" />
+    </edge>
+    <edge source="dto.CPUDto" target="dto.CPUTypes">
+      <point x="-85.0" y="40.0" />
+      <point x="2320.0" y="1920.0" />
+      <point x="2320.0" y="2230.0" />
+      <point x="-60.0" y="-10.0" />
+    </edge>
+    <edge source="db.MotherboardRepository" target="dto.CPUTypes">
+      <point x="0.0" y="-28.0" />
+      <point x="2360.0" y="2245.0" />
+      <point x="-60.0" y="5.0" />
+    </edge>
+    <edge source="dto.MotherboardDto" target="dto.RAMDto">
+      <point x="244.5" y="-20.0" />
+      <point x="4880.0" y="2740.0" />
+      <point x="4880.0" y="2600.0" />
+      <point x="-89.0" y="40.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.PowerSupply">
+      <point x="150.5" y="60.0" />
+      <point x="3600.0" y="380.0" />
+      <point x="0.0" y="-72.5" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.Motherboard">
+      <point x="150.5" y="30.0" />
+      <point x="4480.0" y="350.0" />
+      <point x="0.0" y="-171.5" />
+    </edge>
+    <edge source="dto.MotherboardDto" target="dto.RAMTypes">
+      <point x="244.5" y="-33.333333333333485" />
+      <point x="4760.0" y="2726.6666666666665" />
+      <point x="4760.0" y="2330.0" />
+      <point x="-60.0" y="10.0" />
+    </edge>
+    <edge source="dto.MotherboardDto" target="dto.CPUDto">
+      <point x="0.0" y="-94.5" />
+      <point x="1520.0" y="1880.0" />
+      <point x="-85.0" y="0.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.MotherboardTypes">
+      <point x="-40.0" y="160.5" />
+      <point x="2640.0" y="560.0" />
+      <point x="1080.0" y="560.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.EntytyConverter">
+      <point x="150.5" y="50.0" />
+      <point x="3760.0" y="370.0" />
+      <point x="0.0" y="-16.0" />
+    </edge>
+    <edge source="model.RAM" target="model.IAdapter">
+      <point x="0.0" y="72.5" />
+      <point x="0.0" y="-39.0" />
+    </edge>
+    <edge source="dto.SystemUnitDto" target="dto.MotherboardTypes">
+      <point x="243.0" y="-53.333333333333485" />
+      <point x="1040.0" y="2986.6666666666665" />
+      <point x="-40.0" y="16.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="model.SystemUnit">
+      <point x="150.5" y="70.0" />
+      <point x="3240.0" y="390.0" />
+      <point x="-40.0" y="-105.5" />
+    </edge>
+    <edge source="db.MotherboardRepository" target="dto.MotherboardTypes">
+      <point x="-120.5" y="0.0" />
+      <point x="97.5" y="0.0" />
+    </edge>
+    <edge source="model.PowerSupply" target="model.IAdapter">
+      <point x="115.0" y="0.0" />
+      <point x="3960.0" y="1200.0" />
+      <point x="-80.0" y="39.0" />
+    </edge>
+    <edge source="model.Motherboard" target="dto.MotherboardDto">
+      <point x="184.5" y="40.0" />
+      <point x="4720.0" y="800.0" />
+      <point x="4720.0" y="2720.0" />
+      <point x="244.5" y="-40.0" />
+    </edge>
+    <edge source="db.SysteUnitRepository" target="dto.MotherboardTypes">
+      <point x="0.0" y="-28.0" />
+      <point x="800.0" y="2330.0" />
+      <point x="-97.5" y="10.0" />
+    </edge>
+    <edge source="model.Motherboard" target="model.CPU">
+      <point x="-40.0" y="171.5" />
+      <point x="4440.0" y="2080.0" />
+      <point x="92.0" y="0.0" />
+    </edge>
+    <edge source="model.Motherboard" target="model.IAdapter">
+      <point x="-120.0" y="171.5" />
+      <point x="4360.0" y="1040.0" />
+      <point x="105.5" y="0.0" />
+    </edge>
+    <edge source="MainWindow" target="dto.MotherboardDto">
+      <point x="-126.0" y="0.0" />
+      <point x="244.5" y="0.0" />
+    </edge>
+    <edge source="model.ComputerBuilder" target="dto.SystemUnitDto">
+      <point x="-150.5" y="0.0" />
+      <point x="0.0" y="320.0" />
+      <point x="0.0" y="3040.0" />
+      <point x="-243.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.40000000000000013" x="3722.3333333333317" y="2241.9999999999986" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
