@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lab1.model;
 
 namespace Lab1
 {
@@ -21,7 +22,7 @@ namespace Lab1
     /// </summary>
     public partial class MainWindow : Window
     {
-        ComputerBuilder computerBuilder = new ComputerBuilder();
+        IComputerBuilder computerBuilder = new ComputerBuilder();
         public MainWindow()
         {
             InitializeComponent();

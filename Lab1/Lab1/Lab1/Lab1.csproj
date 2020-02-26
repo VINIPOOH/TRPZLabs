@@ -87,6 +87,7 @@
     <Compile Include="model\CPU.cs" />
     <Compile Include="model\EntytyConverter.cs" />
     <Compile Include="model\IAdapter.cs" />
+    <Compile Include="model\IComputerBuilder.cs" />
     <Compile Include="model\Motherboard.cs" />
     <Compile Include="model\PowerSupply.cs" />
     <Compile Include="model\RAM.cs" />

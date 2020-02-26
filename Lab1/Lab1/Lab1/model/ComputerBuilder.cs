@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace Lab1Code.model
 {
-    class ComputerBuilder
+    class ComputerBuilder:IComputerBuilder
     {
         private List<SystemUnit> systemUnits;
         private List<Motherboard>  motherboards;
@@ -16,14 +16,12 @@ namespace Lab1Code.model
         private SystemUnit componResult;
 
 
-
-
-        internal List<SystemUnitDto> SystemUnits()
+        public List<SystemUnitDto> SystemUnits()
         {
             return EntytyConverter.GetAdapteesFromAdapters<SystemUnitDto,SystemUnit>(systemUnits);
         }
 
-        internal List<MotherboardDto> Motherboards()
+        public List<MotherboardDto> Motherboards()
         {
             return EntytyConverter.GetAdapteesFromAdapters<MotherboardDto,Motherboard>(motherboards);
         }
@@ -33,19 +31,19 @@ namespace Lab1Code.model
             return EntytyConverter.GetAdapteesFromAdapters<CPUDto,CPU>(cPUs);
         }
 
-        internal List<RAMDto> RAMs()
+        public List<RAMDto> RAMs()
         {
             return EntytyConverter.GetAdapteesFromAdapters<RAMDto,RAM>(rAMs);
             
         }
 
-        internal List<PowerSupplyDto> PowerSupplies()
+        public List<PowerSupplyDto> PowerSupplies()
         {
             return EntytyConverter.GetAdapteesFromAdapters<PowerSupplyDto,PowerSupply>(powerSupplies);
             
         }
 
-        internal SystemUnitDto ComponResult()
+        public SystemUnitDto ComponResult()
         {
             return componResult.GetAdaptee();
         }

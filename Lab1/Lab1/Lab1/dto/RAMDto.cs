@@ -18,6 +18,6 @@ namespace Lab1.dto
         }
 
         public int UsingPover { get => usingPover; set => usingPover = value; }
-        internal RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
+        public RAMTypes RAMTypes { get => rAMTypes; set => rAMTypes = value; }
     }
 }
