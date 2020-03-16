@@ -8,9 +8,10 @@ using Lab1.dto;
 
 namespace Lab1.db
 {
-    public class SysteUnitRepository
+    public class SysteUnitRepository : IRepository<SystemUnitDto>
     {
-        public static List<SystemUnitDto> findAll()
+
+        List<SystemUnitDto> IRepository<SystemUnitDto>.findAll()
         {
             List<SystemUnitDto> systemUnits = new List<SystemUnitDto>();//спросить про ИДЕЕ!!!
             systemUnits.Add(new SystemUnitDto(MotherboardTypes.BIG,1000,null,null,"BIG"));

@@ -10,6 +10,7 @@
         <e p="db" t="Include">
           <e p="CPURepository.cs" t="Include" />
           <e p="dbHandler.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
           <e p="MotherboardRepository.cs" t="Include" />
           <e p="PowerSupplyRepository.cs" t="Include" />
           <e p="RAMRepository.cs" t="Include" />

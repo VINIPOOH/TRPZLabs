@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Lab1.db
 {
-    class CPURepository
+    class CPURepository :IRepository<CPUDto>
     {
-        public static List<CPUDto> findAll()
+        List<CPUDto> IRepository<CPUDto>.findAll()
         {
             List<CPUDto> cPUs = new List<CPUDto>();
             cPUs.Add(new CPUDto(CPUTypes.SMOLLE, 200));

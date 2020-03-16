@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="db\CPURepository.cs" />
     <Compile Include="db\dbHandler.cs" />
+    <Compile Include="db\IRepository.cs" />
     <Compile Include="db\MotherboardRepository.cs" />
     <Compile Include="db\PowerSupplyRepository.cs" />
     <Compile Include="db\RAMRepository.cs" />

@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace Lab1.db
 {
-    class RAMRepository
+    class RAMRepository : IRepository<RAMDto>
     {
-        public static List<RAMDto> findAll()
+        
+
+        List<RAMDto> IRepository<RAMDto>.findAll()
         {
             List<RAMDto> rAMs = new List<RAMDto>();
             rAMs.Add(new RAMDto (RAMTypes.SMOLLE, 100));

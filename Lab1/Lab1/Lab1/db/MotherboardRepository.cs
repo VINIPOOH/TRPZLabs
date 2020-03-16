@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace Lab1.db
 {
-    class MotherboardRepository
+    class MotherboardRepository : IRepository<MotherboardDto>
     {
-        public static List<MotherboardDto> findAll()
+        
+
+        List<MotherboardDto> IRepository<MotherboardDto>.findAll()
         {
             List<MotherboardDto> motherboards = new List<MotherboardDto>();
             motherboards.Add(new MotherboardDto(30,MotherboardTypes.BIG, RAMTypes.BIG, CPUTypes.BIG, null,null));

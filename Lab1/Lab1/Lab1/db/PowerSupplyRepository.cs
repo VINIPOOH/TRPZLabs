@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace Lab1.db
 {
-    class PowerSupplyRepository
+    class PowerSupplyRepository : IRepository<PowerSupplyDto>
     {
-        public static List<PowerSupplyDto> findAll()
+      
+
+        List<PowerSupplyDto> IRepository<PowerSupplyDto>.findAll()
         {
             List<PowerSupplyDto>  powerSupplies = new List<PowerSupplyDto>();
             powerSupplies.Add(new PowerSupplyDto(300, -2));
