@@ -52,14 +52,16 @@ namespace Lab1Code.model
 
         public ComputerBuilder()
         {
-            systemUnits = EntytyConverter.SetAdapteesInAdapters<SystemUnitDto, SystemUnit>(((IRepository<SystemUnitDto>)
-                new SysteUnitRepository()).findAll());
-           motherboards = EntytyConverter.SetAdapteesInAdapters<MotherboardDto,Motherboard>((
-               (IRepository<MotherboardDto>) new MotherboardRepository()).findAll());
-            cPUs = EntytyConverter.SetAdapteesInAdapters<CPUDto, CPU>(((IRepository<CPUDto>) new CPURepository()).findAll());
-            rAMs = EntytyConverter.SetAdapteesInAdapters<RAMDto,RAM>(((IRepository<RAMDto>) new RAMRepository()).findAll());
-            powerSupplies = EntytyConverter.SetAdapteesInAdapters<PowerSupplyDto,PowerSupply>((
-                (IRepository<PowerSupplyDto>) new PowerSupplyRepository()).findAll());
+            systemUnits = EntytyConverter.SetAdapteesInAdapters<SystemUnitDto, SystemUnit>(
+                (RepositoryFactory.SysRepository).findAll());
+           motherboards = EntytyConverter.SetAdapteesInAdapters<MotherboardDto,Motherboard>(
+               (RepositoryFactory.MotherRepository).findAll());
+            cPUs = EntytyConverter.SetAdapteesInAdapters<CPUDto, CPU>(
+                (RepositoryFactory.CpuRepository).findAll());
+            rAMs = EntytyConverter.SetAdapteesInAdapters<RAMDto,RAM>(
+                (RepositoryFactory.RamRepository).findAll());
+            powerSupplies = EntytyConverter.SetAdapteesInAdapters<PowerSupplyDto,PowerSupply>(
+                (RepositoryFactory.PowerSupliRepository).findAll());
             componResult = new SystemUnit(MotherboardTypes.BIG, 500, "DEFAULT");
         }
      

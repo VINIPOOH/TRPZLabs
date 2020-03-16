@@ -69,6 +69,7 @@
     <Compile Include="db\MotherboardRepository.cs" />
     <Compile Include="db\PowerSupplyRepository.cs" />
     <Compile Include="db\RAMRepository.cs" />
+    <Compile Include="db\RepositoryFactory.cs" />
     <Compile Include="db\SysteUnitRepository.cs" />
     <Compile Include="dto\CPUDto.cs" />
     <Compile Include="dto\CPUTypes.cs" />

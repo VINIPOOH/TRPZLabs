@@ -14,6 +14,7 @@
           <e p="MotherboardRepository.cs" t="Include" />
           <e p="PowerSupplyRepository.cs" t="Include" />
           <e p="RAMRepository.cs" t="Include" />
+          <e p="RepositoryFactory.cs" t="Include" />
           <e p="SysteUnitRepository.cs" t="Include" />
         </e>
         <e p="dto" t="Include">
