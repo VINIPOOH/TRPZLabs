@@ -1,9 +1,4 @@
-using Lab1.dto;
-using Lab1.model;
-using Lab1Code.model;
-
-namespace Lab1.db
-{
+package db;
     public class RepositoryFactory
     {
         private static IRepository<SystemUnitDto> sysRepository = new SysteUnitRepository();
@@ -34,4 +29,3 @@ namespace Lab1.db
         }
     }
     
-}

@@ -1,15 +1,6 @@
-﻿using Lab1.dto;
-using Lab1Code.model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿package db;
+    class MotherboardRepository implements IRepository<MotherboardDto>
 
-namespace Lab1.db
-{
-    class MotherboardRepository : IRepository<MotherboardDto>
-    {
 
         List<MotherboardDto> IRepository<MotherboardDto>.findAll()
         {
@@ -19,5 +10,5 @@ namespace Lab1.db
             motherboards.Add(new MotherboardDto(30, MotherboardTypes.BIG, RAMTypes.SMOLLE, CPUTypes.BIG, null, null));
             return motherboards;
         }
-    }
+
 }

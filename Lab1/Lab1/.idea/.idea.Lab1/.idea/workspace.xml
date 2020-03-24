@@ -2,16 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc3076ce-c8f5-4b7d-aa01-dcc7ff674cb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab1/db/RepositoryFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/bin/Debug/Lab1.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/bin/Debug/Lab1.exe.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/bin/Debug/Lab1.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/CPURepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/MotherboardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/PowerSupplyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/RAMRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/RepositoryFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/db/SysteUnitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/CPUDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/CPUTypes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/MotherboardDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/MotherboardTypes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/PowerSupplyDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/RAMDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/RAMTypes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/dto/SystemUnitDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/CPU.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/ComputerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/EntytyConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/IAdapter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/IComputerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/Motherboard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/PowerSupply.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/RAM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassDiagram/src/model/SystemUnit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Lab1/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Lab1/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/Lab1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Lab1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/db/RepositoryFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/db/RepositoryFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1_MarkupCompile.i.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1_MarkupCompile.i.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/Lab1_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/MainWindow.baml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,12 +118,12 @@
         <option value="$PROJECT_DIR$/Lab1/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/Lab1/dto/RAMDto.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/CPURepository.cs" />
-        <option value="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/PowerSupplyRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/RAMRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/SysteUnitRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/IRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/model/ComputerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Lab1/db/MotherboardRepository.cs" />
         <option value="$PROJECT_DIR$/Lab1/db/RepositoryFactory.cs" />
       </list>
     </option>
@@ -172,6 +196,9 @@
       <workItem from="1582387107355" duration="5004000" />
       <workItem from="1582445022767" duration="1618000" />
       <workItem from="1582704003194" duration="622000" />
+      <workItem from="1584361662427" duration="1159000" />
+      <workItem from="1584372023675" duration="214000" />
+      <workItem from="1585038118265" duration="1397000" />
     </task>
     <servers />
   </component>
